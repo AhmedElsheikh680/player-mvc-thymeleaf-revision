@@ -10,6 +10,7 @@
     <h1 class="mydiv">Add Player</h1>
 
     <form th:action="@{/savePlayer}" th:object="${player}" class="mydiv" method="post">
+        <input type="hidden" th:field="*{id}">
         <div class="input-group mb-3">
             <span class="input-group-text" >@</span>
             <input th:field="*{name}" type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">

@@ -16,6 +16,7 @@
             <th scope="col">Number</th>
             <th scope="col">Address</th>
             <th scope="col">Phone</th>
+            <th scope="col">Action</th>
         </tr>
         </thead>
         <tbody>
@@ -25,6 +26,10 @@
             <th th:text="${temp.number}"></th>
             <th th:text="${temp.address}"></th>
             <th th:text="${temp.phone}"></th>
+            <td>
+                <a th:href="@{/getPlayer(playerId=${temp.id})}" class="btn btn-success">Edit</a>
+                <a class="btn btn-danger">Delete</a>
+            </td>
         </tr>
         </tbody>
 
