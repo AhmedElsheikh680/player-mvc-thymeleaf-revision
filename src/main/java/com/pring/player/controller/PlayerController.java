@@ -21,4 +21,9 @@ public class PlayerController {
 
         return "home";
     }
+
+    @GetMapping("/addFormPlayer")
+    public String addFormPlayer(){
+        return "form-player";
+    }
 }
